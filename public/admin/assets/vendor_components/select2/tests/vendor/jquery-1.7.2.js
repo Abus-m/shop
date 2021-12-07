@@ -9309,7 +9309,7 @@ function getWindow( elem ) {
 
 // Create width, height, innerHeight, innerWidth, outerHeight and outerWidth methods
 jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
-	var clientProp = "client" + name,
+	var clientProp = "Client" + name,
 		scrollProp = "scroll" + name,
 		offsetProp = "offset" + name;
 
@@ -9350,9 +9350,9 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 				// Either scroll[Width/Height] or offset[Width/Height], whichever is greater
 				doc = elem.documentElement;
 
-				// when a window > document, IE6 reports a offset[Width/Height] > client[Width/Height]
+				// when a window > document, IE6 reports a offset[Width/Height] > Client[Width/Height]
 				// so we can't use max, as it'll choose the incorrect offset[Width/Height]
-				// instead we use the correct client[Width/Height]
+				// instead we use the correct Client[Width/Height]
 				// support:IE6
 				if ( doc[ clientProp ] >= doc[ scrollProp ] ) {
 					return doc[ clientProp ];

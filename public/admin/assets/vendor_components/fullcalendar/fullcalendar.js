@@ -3885,7 +3885,7 @@ var View = /** @class */ (function (_super) {
         if (dateMutation) {
             eventInstance.dateProfile = dateMutation.buildNewDateProfile(eventInstance.dateProfile, this.calendar);
         }
-        this.triggerEventDrop(eventInstance, 
+        this.triggerEventDrop(eventInstance,
         // a drop doesn't necessarily mean a date mutation (ex: resource change)
         (dateMutation && dateMutation.dateDelta) || moment.duration(), undoFunc, el, ev);
     };
@@ -9985,7 +9985,7 @@ var Calendar = /** @class */ (function () {
         }
         return new EventDateProfile_1.default(start, end, this);
     };
-    // Returns a moment for the current date, as defined by the client's computer or from the `now` option.
+    // Returns a moment for the current date, as defined by the Client's computer or from the `now` option.
     // Will return an moment with an ambiguous timezone.
     Calendar.prototype.getNow = function () {
         var now = this.opt('now');

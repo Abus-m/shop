@@ -6,11 +6,11 @@ import getClientRect from './getClientRect';
 import isIE10 from './isIE10';
 
 /**
- * Get bounding client rect of given element
+ * Get bounding Client rect of given element
  * @method
  * @memberof Popper.Utils
  * @param {HTMLElement} element
- * @return {Object} client rect
+ * @return {Object} Client rect
  */
 export default function getBoundingClientRect(element) {
   let rect = {};

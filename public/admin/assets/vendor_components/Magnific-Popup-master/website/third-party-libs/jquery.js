@@ -6803,7 +6803,7 @@ jQuery.extend({
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
 		}
-		
+
 		// Make sure that we're working with the right name
 		var ret, type, hooks,
 			origName = jQuery.camelCase( name ),
@@ -9545,19 +9545,19 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 					// As of 5/8/2012 this will yield incorrect results for Mobile Safari, but there
 					// isn't a whole lot we can do. See pull request at this URL for discussion:
 					// https://github.com/jquery/jquery/pull/764
-					return elem.document.documentElement[ "client" + name ];
+					return elem.document.documentElement[ "Client" + name ];
 				}
 
 				// Get document width or height
 				if ( elem.nodeType === 9 ) {
 					doc = elem.documentElement;
 
-					// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height], whichever is greatest
+					// Either scroll[Width/Height] or offset[Width/Height] or Client[Width/Height], whichever is greatest
 					// unfortunately, this causes bug #3838 in IE6/8 only, but there is currently no good, small way to fix it.
 					return Math.max(
 						elem.body[ "scroll" + name ], doc[ "scroll" + name ],
 						elem.body[ "offset" + name ], doc[ "offset" + name ],
-						doc[ "client" + name ]
+						doc[ "Client" + name ]
 					);
 				}
 

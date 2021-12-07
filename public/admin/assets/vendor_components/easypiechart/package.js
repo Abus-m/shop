@@ -8,9 +8,9 @@ Package.describe({
 
 Package.onUse(function (api) {
 	api.versionsFrom('METEOR@0.9.0.1');
-    api.use('jquery', 'client');
+    api.use('jquery', 'Client');
 
-	api.add_files(['dist/jquery.easypiechart.js'], 'client');
+	api.add_files(['dist/jquery.easypiechart.js'], 'Client');
 });
 
 Package.onTest(function (api) {
